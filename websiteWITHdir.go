@@ -9,8 +9,8 @@ func main() {
   fs := http.FileServer(http.Dir("."))
   http.Handle("/", fs)
 
-  log.Println("Listening on :3000...")
-  err := http.ListenAndServe(":3000", nil)
+  log.Println("Listening on :2209...")
+  err := http.ListenAndServe(":2209", nil)
   if err != nil {
     log.Fatal(err)
   }
